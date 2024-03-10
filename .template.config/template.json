@@ -2,9 +2,9 @@
   "$schema": "http://json.schemastore.org/template",
   "author": "Aleksandr Amelkin",
   "classifications": ["Web","Solution"],
-  "name": "DDD DotNet Template",
+  "name": "DDD DotNet High Load Template",
   "description": "Template for rapid deployment of DDD architecture",
-  "shortName": "gm",
+  "shortName": "gmdddservice",
   "defaultName": "Default",
   "identity": "Template",
   "tags": {
@@ -39,6 +39,18 @@
       "replaces":"{CONTACT_URL}"
     }
   },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "condition": false,
+          "exclude": [
+            ".git"
+          ]
+        }
+      ]
+    }
+  ],
   "primaryOutputs": [
     {
       "path": "GMAster.Web.App.sln"

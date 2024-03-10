@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Aleksandr Amelkin",
+  "classifications": ["Web","Solution"],
+  "name": "DDD DotNet Template",
+  "description": "Template for rapid deployment of DDD architecture",
+  "shortName": "gm",
+  "defaultName": "Default",
+  "identity": "Template",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "sourceName": "Template",
+  "preferNameDirectory": true,
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "net8.0",
+          "description": "Target net8.0"
+        }
+      ],
+      "defaultValue": "new8.0"
+    },
+    "ContactName": {
+      "type": "parameter",
+      "description": "Your contact name.",
+      "defaultValue": "{CONTACT_NAME}",
+      "replaces":"{CONTACT_NAME}"
+    },
+    "ContactURL": {
+      "type": "parameter",
+      "description": "Your url-site address.",
+      "defaultValue": "{CONTACT_URL}",
+      "replaces":"{CONTACT_URL}"
+    }
+  },
+  "primaryOutputs": [
+    {
+      "path": "GMAster.Web.App.sln"
+    }
+  ]
+}
